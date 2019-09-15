@@ -117,7 +117,7 @@ module.exports = {
             ignoreOrder: false, // Enable to remove warnings about conflicting order
         }),
         new HtmlWebpackPlugin({
-            template: 'src/index.html'
+            template: path.resolve(__dirname, 'src/index.html')
         }),
         new ExtractTextPlugin({
             filename: './css/style.bundle.css',
